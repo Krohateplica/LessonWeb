@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta
+            content="text/html; charset=utf-8"
+            http-equiv="content-type">
+    <title>Maserati</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header"><img src="src/img/Header.png" alt="шапка"/></div>
+    <div id="content">
+        <div id="nav">
+            <ul><!-- <ol>нумерованный список-->
+                <li><a href="index.html" title="на главную"><img src="src/img/Logo.jpg" alt="Логотип"></a></li>
+                <li><a href="Ghibli.html" title="Ghibli">Ghibli</a></li>
+                <li><a href="Quattropoort.html" title="Quattropoort">Quattropoort</a></li>
+                <li><a href="GranTurismo.html" title="GranTurismo">GranTurismo</a></li>
+            </ul>
+            <div id="map"><img src="src/img/Map.jpg" alt="Карта"></div>
+        </div>
+        <div id="main">
+            <table border="1px solid black;">
+                <tr>
+                    <th id="main_title" colspan="3"><h1>Главная</h1></th>
+                </tr>
+                <tr >
+                    <td class="small_card">
+                        <img src="src/img/Ghibli.jpg" alt="Ghibli">
+                        <div class="content"><small>Бизнес-класс</small>
+                        <h2>Ghibli</h2>
+                        <p>Maserati Ghibli III - седан бизнес класса итальянской компании Maserati, который поступил в продажу во второй полвине 2013 г. </p>
+                            <a href="Ghibli.html" title="Ghibli">Перейти</a></div>
+                    </td>
+                    <td class="small_card">
+                        <img src="src/img/Quatro.jpg" alt="Quatro">
+                        <div class="content"><small>Представительский класс</small>
+                        <h2>Quattroport</h2>
+                        <p>Maserati Quattroport - спортивный полноразмерный седан класса люкс,
+                            который изготавливается итальянской компанией Maserati c 1963 г. </p>
+                            <a href="Quattropoort.html" title="Quattropoort">Перейти</a></div>
+                    </td>
+                    <td class="small_card">
+                    <img src="src/img/Grand.jpg" alt="GranTurismo">
+                        <div class="content"><small>купе</small>
+                    <h2>GranTurismo</h2>
+                    <p>Maserati GranTurismo - автомобиль класса Gran Turismo итальянской компании Maserati. Выпускается c 2007 г. </p>
+                            <a href="GranTurismo.html" title="GranTurismo">Перейти</a></div>
+                </td>
+                </tr>
+                <tr>
+
+                    <td class="big_card" colspan="3">
+                    <img src="src/img/Form.png" alt="Форма"/>
+                    <form onsubmit="return false" action="/Home/Order" method="post">
+                        <fieldset>
+                            <legend>Оформление заказа</legend>
+                            <input type="text" name="Name" placeholder="Введите ваше имя" required/><br>
+                            <input type="tel" name="Tel" placeholder="8-(xxx)-(xxx)-(xxxx)" required patern="8-[0-9]{3}-[0-9]{3}
+                            -[0-9]{4}"/><br>
+                            <select name="Car">
+                                <option value="Chibli">Chibli</option>
+                                <option value="Quattroport">Quattroport</option>
+                                <option value="GranTurismo">GranTurismo</option>
+                            </select>
+                            <input type="submit"/>
+                        </fieldset>
+                    </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy</p>
+        <h4>Выполнено на основе уроков:</h4>
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/watch?v=AUQMy9-M7gg&list=PLLhZvA0NHjMANAaBP1p_OB39zVgsqvqNg" target="_blank">
+                    Введение в HTML</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=Sv_5pcP6654&list=PLLhZvA0NHjMBHob1EV8F1oOBOdVpU-saw" target="_blank">
+                    Введение в CSS</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=Qt06m3eUti4&index=1&list=PLLhZvA0NHjMAfBVjns-Pth3386QOzd411" target="_blank">
+                    Введение в JS</a>
+            </li>
+            <li>
+                <a href="JSIndex.html">Переход на страницу SJIndex</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+
+</body>
+</html>
